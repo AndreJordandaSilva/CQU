@@ -1,2 +1,0 @@
-# CQU
-University Work
