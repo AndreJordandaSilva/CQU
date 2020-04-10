@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+
+article, footer, header, main, nav, section {
+  	display: block;
+}
+
+html, body, h1, h2, ul, li, a, p, 
+article, footer, header, main, nav, section {
+  	padding: 0;
+  	margin: 0;
+ 	 
+}
+
+body{
+  
+}
+
+nav{
+	text-align: center;
+
+}
+
+li { 
+	justify-content: center;
+	margin-left: 20px;
+	font-size: 1.1rem;  
+	letter-spacing: .9px;
+}
+
+ .carousel-inner > .carousel-item > img {
+	align-items:  center;
+ 	width: 100%; 
+  	height: auto;
+}
+
+
+.card-body > img{
+	max-width: 300px;
+}
+       
+
+footer {
+	margin-top: 20px;
+	bottom: 0;
+	padding: 25px 20px;
+	font-size: 18px;
+	height: 70px;
+	background-color:#D2AC6E;
+}
+      
+       
+.card-body.text-center{
+	padding: 0;
+}
+
+.card-header{
+	background-color:#D2AC6E;
+}
+
+.checked {
+  color: orange;
+}

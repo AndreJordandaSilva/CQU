@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <!-- Meta data -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="Stylesheet"  TYPE="text/css" href="css/custom.css">
+        <script src="js/bootstrap.bundle.js"></script>
+
+        <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/spa-candle.png"  />
+        <title>Kathy's Candles</title>
+
+	</head>
+
+	<body>
+    	<div class="container">
+            <div class="row">
+                <div class="col-12" >
+                       <a href="#" > <img class="img-fluid" Style="width:100%;" src="img/home.jpg" alt="Home"> </a>
+                    </div>
+                </div>
+                <!-- Navbar -->
+                <div class="row" >
+                    <div class="col-md-12" >
+                        <nav class="navbar navbar-expand-md navbar-dark bg-dark" Style="">
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Products.html">Products</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Contactus.html">Contact Us</a>
+                                </li>
+                            </ul>
+                            <a class="btn btn-dark" style="margin-left: auto;" href="#" data-toggle="modal" data-target="#signin">Sign In</a>
+                            <a class="btn btn-dark"  href="#" data-toggle="modal" data-target="#signup">Sign Up</a>
+
+                            <!-- Modal-->
+                            <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                      <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                            </button>
+                                          </div>
+                                          <div class="modal-body">
+                                            <form class="form-horizontal">
+                                                <div class="form-group">
+                                                    <label for="inputEmail3" Style="float:left;" class="col-sm-2 control-label">Email</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputPassword3" Style="float:left;" class="col-sm-2 control-label">Password</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="passwoord" class="form-control" id="inputPassword3" placeholder="Password">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-sm-offset-2 col-sm-10">
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox"> Remember me
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                  <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button type="submit" class="btn btn-primary">Sign In</button>
+                                                  </div>
+                                                </div>
+                                            </form>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                            <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                      <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                            </button>
+                                          </div>
+                                          <div class="modal-body">
+                                            <form class="form-horizontal">
+                                                <div class="form-group">
+                                                    <label for="inputEmail3" Style="float:left;"class="col-sm-2 control-label">Name</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="Name" class="form-control" id="inputEmail3" placeholder="Full Name">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputEmail3" Style="float:left;" class="col-sm-2 control-label">D.O.B</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="email" class="form-control" id="inputEmail3" placeholder="Date of Birth">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputEmail3" Style="float:left;" class="col-sm-2 control-label">Email</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputPassword3" Style="float:left;" class="col-sm-2 control-label">Password</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="passwoord" class="form-control" id="inputPassword3" placeholder="Password">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                  <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                                                  </div>
+                                                </div>
+                                            </form>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <!-- Search Area -->
+                    <div class="row" Style="margin-top: 15px;">
+
+                    <div class="col-12 col-xs-12 col-md-4" >
+
+                        <form class="example" action="/action_page.php" style="margin:auto;">
+                          <input type="text" placeholder="Search" name="search">
+                          <button type="button" class="btn btn-dark">Search</button>
+                        </form>  
+                    </div>
+
+                <!-- Carousel-->
+                <div class="col-md-8 col-sm-12 col-12" >
+                    <div class="carousel-home">
+                      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                        <div class="carousel-inner justify-content-center">
+                          <div class="carousel-item active">
+                            <img src="img/candle-car1.jpg" class="col-sm-12"  alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+
+                            </div>
+                          </div>
+                          <div class="carousel-item ">
+                            <img src="img/candle-car2.jpg" class="col-sm-12"  alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/candle-car3.jpg" class="col-sm-12"   alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+
+                            </div>
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                          <span class="carousel-control" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                          <span class="carousel-control" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card inside an Accordion -->
+            <div class="row" Style="margin-top: 15px;">
+
+                <div class="col-12 justify-content-center">
+
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                          <h2 class="mb-0">
+                            <button class="btn btn-link" Style="color:black; font-weight: bold;" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Most Popular
+                            </button>
+                          </h2>
+                        </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                              
+                    <div class="card-body">            
+                
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-6 col-lg-3 pb-3" style="text-align: center;">
+                            <a class="card" href="#" data-toggle="tooltip" data-placement="top" title="$25">
+                              <img class="card-img-top" src="img/candle-premium13.jpg" alt="Silicone Fob Watch">
+                                <div class="card-body text-center">
+                                <p class="card-text " >Voluspa Japonica Chawan</p>
+                                </div> 
+                            </a>
+                                <button type="button" class="btn btn-sm btn-dark mt-1" data-toggle="popover" title="1x Candle" data-content="The item has been added to your shopping cart">
+                                     <span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart
+                                </button>
+                        </div> 
+                        <!-- The only product page available-->            
+                        <div class="col-md-4 col-sm-6 col-6 col-lg-3 pb-3" style="text-align: center;">
+                            <a class="card" href="HomesickCandle.html" data-toggle="tooltip" data-placement="top" title="$30">
+                              <img class="card-img-top" src="img/candle-premium10.jpg" alt="Silicone Fob Watch">
+                              <div class="card-body text-center">
+                                <p class="card-text">Homesick Grandma's Kitchen</p>
+                                </div> 
+                                </a>
+                                    <button type="button" class="btn btn-sm btn-dark mt-1" data-toggle="popover" title="1x Candle" data-content="The item has been added to your shopping cart">
+                                <span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart
+                                    </button>
+                              </div>
+                        <div class="col-md-4 col-sm-6 col-6 col-lg-3 pb-3" style="text-align: center;">
+                            <a class="card" href="#" data-toggle="tooltip" data-placement="top" title="$35">
+                              <img class="card-img-top" src="img/candle-premium12.jpg" alt="Silicone Fob Watch">
+                              <div class="card-body text-center">
+                                <p class="card-text">Wine Scented Soy </p>
+                                </div> 
+                                </a>
+                                    <button type="button" class="btn btn-sm btn-dark mt-1" data-toggle="popover" title="1x Candle" data-content="The item has been added to your shopping cart">
+                                        <span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart
+                                    </button>
+                              </div>                      
+                        <div class="col-md-4 col-sm-6 col-6 col-lg-3 pb-3" style="text-align: center;">
+                            <a class="card" href="#" data-toggle="tooltip" data-placement="top" title="$20">
+                              <img class="card-img-top" src="img/candle-premium6.jpg" alt="Silicone Fob Watch">
+                              <div class="card-body text-center">
+                                <p class="card-text">Fresh Linen French Bee</p>
+                                </div> 
+                                </a>
+                                    <button type="button" class="btn btn-sm btn-dark mt-1" data-toggle="popover" title="1x Candle" data-content="The item has been added to your shopping cart">
+                                        <span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart
+                                    </button>
+                              </div>                                                                                     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 justify-content-center">
+        <div class="accordion" id="Sale">
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link" Style="color:black; font-weight: bold;"type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                      On Sale
+                    </button>
+                  </h2>
+                </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#Sale">
+                              
+                <div class="card-body">             
+                
+                    <div class="row">
+
+                        <div class="col-md-4 col-sm-6 col-6 col-lg-3 pb-3" style="text-align: center;">
+                            <a class="card" href="#" data-toggle="tooltip" data-placement="top" title="$15">
+                              <img class="card-img-top" src="img/candle-premium9.jpg" alt="Silicone Fob Watch">
+                              <div class="card-body text-center">
+                                <p class="card-text">Diptyque Baies/Berries</p>
+                                </div> 
+                                </a>
+                                    <button type="button" class="btn btn-sm btn-dark mt-1" data-toggle="popover" title="1x Candle" data-content="The item has been added to your shopping cart">
+                                        <span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart
+                                    </button>
+                              </div>             
+                    <div class="col-md-4 col-sm-6 col-6 col-lg-3 pb-3" style="text-align: center;">
+                            <a class="card" href="#" data-toggle="tooltip" data-placement="top" title="$20">
+                              <img class="card-img-top" src="img/candle-premium11.jpg" alt="Silicone Fob Watch">
+                              <div class="card-body text-center">
+                                <p class="card-text">Home Scents Candle</p>
+                                </div> 
+                                </a>
+                                    <button type="button" class="btn btn-sm btn-dark mt-1" data-toggle="popover" title="1x Candle" data-content="The item has been added to your shopping cart">
+                                        <span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart
+                                    </button>
+                              </div>
+                    <div class="col-md-4 col-sm-6 col-6 col-lg-3 pb-3" style="text-align: center;">
+                            <a class="card" href="#" data-toggle="tooltip" data-placement="top" title="$25">
+                              <img class="card-img-top" src="img/candle-premium15.jpg" alt="Silicone Fob Watch">
+                              <div class="card-body text-center">
+                                <p class="card-text">Chesapeake Bay</p>
+                                </div> 
+                                </a>
+                                    <button type="button" class="btn btn-sm btn-dark mt-1" data-toggle="popover" title="1x Candle" data-content="The item has been added to your shopping cart">
+                                        <span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart
+                                    </button>
+                              </div>  
+                        
+                    <div class="col-md-4 col-sm-6 col-6 col-lg-3 pb-3" style="text-align: center;">
+                            <a class="card" href="#" data-toggle="tooltip" data-placement="top" title="$15">
+                              <img class="card-img-top" src="img/candle-premium16.jpg" alt="Silicone Fob Watch">
+                              <div class="card-body text-center">
+                                <p class="card-text">Yankee Candle</p>
+                                </div> 
+                                </a>
+                                    <button type="button" class="btn btn-sm btn-dark mt-1" data-toggle="popover" title="1x Candle" data-content="The item has been added to your shopping cart">
+                                <span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart
+                                    </button>
+                              </div>                                                   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Footer -->             
+        <div class="row" >
+            <div class="col-md-12">
+                <footer class="footer text-light bg-dark" >
+                    <p class="text-ligh"><a href="#" class="text-secondary bg-dark">Copyright ©</a></p>
+                </footer>
+            </div>
+        </div>
+    </div>
+	
+    </body>
+
+</html>
+
+
+
+<script type="text/javascript">
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    
+      $('[data-toggle="popover"]').popover({
+     trigger: 'focus'
+        })
+    });
+function myCart() {
+  alert("The item has been added to your shopping cart.");
+}
+
+</script>
