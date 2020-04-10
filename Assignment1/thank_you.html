@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <!-- Meta data -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="Stylesheet"  TYPE="text/css" href="css/custom.css">
+        <script src="js/bootstrap.bundle.js"></script>
+
+        <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/spa-candle.png"  />
+        <title>Kathy's Candles</title>
+
+  </head>
+
+  <body>
+      <div class="container">
+            <div class="row">
+                <div class="col-12" >
+                       <a href="#" > <img class="img-fluid" Style="width:100%;" src="img/home.jpg" alt="Home"> </a>
+                    </div>
+                </div>
+                <!-- Navbar -->
+                <div class="row" >
+                    <div class="col-md-12" >
+                        <nav class="navbar navbar-expand-md navbar-dark bg-dark" Style="">
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Products.html">Products</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Contactus.html">Contact Us</a>
+                                </li>
+                            </ul>
+                            <a class="btn btn-dark" style="margin-left: auto;" href="#" data-toggle="modal" data-target="#signin">Sign In</a>
+                            <a class="btn btn-dark"  href="#" data-toggle="modal" data-target="#signup">Sign Up</a>
+
+                            <!-- Modal-->
+                            <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                      <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                            </button>
+                                          </div>
+                                          <div class="modal-body">
+                                            <form class="form-horizontal">
+                                                <div class="form-group">
+                                                    <label for="inputEmail3" Style="float:left;" class="col-sm-2 control-label">Email</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputPassword3" Style="float:left;" class="col-sm-2 control-label">Password</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="passwoord" class="form-control" id="inputPassword3" placeholder="Password">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-sm-offset-2 col-sm-10">
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox"> Remember me
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                  <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button type="submit" class="btn btn-primary">Sign In</button>
+                                                  </div>
+                                                </div>
+                                            </form>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                            <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                      <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                            </button>
+                                          </div>
+                                          <div class="modal-body">
+                                            <form class="form-horizontal">
+                                                <div class="form-group">
+                                                    <label for="inputEmail3" Style="float:left;"class="col-sm-2 control-label">Name</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="Name" class="form-control" id="inputEmail3" placeholder="Full Name">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputEmail3" Style="float:left;" class="col-sm-2 control-label">D.O.B</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="email" class="form-control" id="inputEmail3" placeholder="Date of Birth">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputEmail3" Style="float:left;" class="col-sm-2 control-label">Email</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputPassword3" Style="float:left;" class="col-sm-2 control-label">Password</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="passwoord" class="form-control" id="inputPassword3" placeholder="Password">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                  <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                                                  </div>
+                                                </div>
+                                            </form>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <!-- Search Area -->
+                    <div class="row" Style="margin-top: 15px;">
+
+                    <div class="col-12 col-xs-12 col-md-4" >
+
+                        <form class="example" action="/action_page.php" style="margin:auto;">
+                          <input type="text" placeholder="Search" name="search">
+                          <button type="button" class="btn btn-dark">Search</button>
+                        </form>  
+                    </div>
+                  </div>
+
+                <!-- Static Alert -->    
+                <div class="row" Style="margin-top: 15px;">
+
+                  <div class="col-12 col-xs-12 col-md-12 col-sm-12" >
+
+                    <div class="alert alert-success" role="alert">
+                      <h4 class="alert-heading">Thank you</h4>
+                      <p>One of our staff we will get in touch as soos as possible.</p>
+                      <hr>
+                      <p class="mb-0">Click home to go back to the main page.</p>
+                    </div>
+
+                  </div>
+                </div>                
+        <!-- Footer -->             
+        <div class="row" >
+            <div class="col-md-12">
+                <footer class="footer text-light bg-dark" >
+                    <p class="text-ligh"><a href="#" class="text-secondary bg-dark">Copyright ©</a></p>
+                </footer>
+            </div>
+        </div>
+    </div>
+  
+    </body>
+
+</html>
+
+
+<script type="text/javascript">
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    
+      $('[data-toggle="popover"]').popover({
+     trigger: 'focus'
+        })
+    });
+function myCart() {
+  alert("The item has been added to your shopping cart.");
+}
+
+</script>
+
+
+
+
+

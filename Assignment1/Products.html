@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <!-- Meta data -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="Stylesheet"  TYPE="text/css" href="css/custom.css">
+        <script src="js/bootstrap.bundle.js"></script>
+
+        <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/spa-candle.png"  />
+        <title>Kathy's Candles</title>
+
+  </head>
+
+  <body>
+      <div class="container">
+            <div class="row">
+                <div class="col-12" >
+                       <a href="#" > <img class="img-fluid" Style="width:100%;" src="img/home.jpg" alt="Home"> </a>
+                    </div>
+                </div>
+                <!-- Navbar -->
+                <div class="row" >
+                    <div class="col-md-12" >
+                        <nav class="navbar navbar-expand-md navbar-dark bg-dark" Style="">
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Products.html">Products</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Contactus.html">Contact Us</a>
+                                </li>
+                            </ul>
+                            <a class="btn btn-dark" style="margin-left: auto;" href="#" data-toggle="modal" data-target="#signin">Sign In</a>
+                            <a class="btn btn-dark"  href="#" data-toggle="modal" data-target="#signup">Sign Up</a>
+
+                            <!-- Modal-->
+                            <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                      <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                            </button>
+                                          </div>
+                                          <div class="modal-body">
+                                            <form class="form-horizontal">
+                                                <div class="form-group">
+                                                    <label for="inputEmail3" Style="float:left;" class="col-sm-2 control-label">Email</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputPassword3" Style="float:left;" class="col-sm-2 control-label">Password</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="passwoord" class="form-control" id="inputPassword3" placeholder="Password">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-sm-offset-2 col-sm-10">
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox"> Remember me
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                  <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button type="submit" class="btn btn-primary">Sign In</button>
+                                                  </div>
+                                                </div>
+                                            </form>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                            <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                      <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                            </button>
+                                          </div>
+                                          <div class="modal-body">
+                                            <form class="form-horizontal">
+                                                <div class="form-group">
+                                                    <label for="inputEmail3" Style="float:left;"class="col-sm-2 control-label">Name</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="Name" class="form-control" id="inputEmail3" placeholder="Full Name">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputEmail3" Style="float:left;" class="col-sm-2 control-label">D.O.B</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="email" class="form-control" id="inputEmail3" placeholder="Date of Birth">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputEmail3" Style="float:left;" class="col-sm-2 control-label">Email</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputPassword3" Style="float:left;" class="col-sm-2 control-label">Password</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="passwoord" class="form-control" id="inputPassword3" placeholder="Password">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                  <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                                                  </div>
+                                                </div>
+                                            </form>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <!-- Search Area -->
+                    <div class="row" Style="margin-top: 15px;">
+
+                    <div class="col-12 col-xs-12 col-md-4" >
+
+                        <form class="example" action="/action_page.php" style="margin:auto;">
+                          <input type="text" placeholder="Search" name="search">
+                          <button type="button" class="btn btn-dark">Search</button>
+                        </form>                                           
+                    </div>
+
+         <!-- Table -->               
+        <div class="col-md-8 col-sm-12 col-12 mt-1" >
+            <div class="accordion" id="SmellyCandle">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link" Style="color:black; font-weight: bold;"type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Aromatic Candles
+                    </button>
+                  </h2>
+                </div>
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#SmellyCandle">
+
+                    <table class="table table-striped table-dark">
+                      <thead>
+                        <tr>
+                          <th scope="col">Code</th>
+                          <th scope="col">Name</th>
+                          <th scope="col">Brand</th>
+                          <th scope="col">Price</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                         <th scope="row">1</th>
+                          <td> <a href="#" class="text-light">Books</a></td>
+                          <td>Homesick</td>
+                          <td>$30.00</td>
+                        </tr>
+                        <tr>
+                         <th scope="row">2</th>
+                          <td> <a href="#" class="text-light">One Together</a></td>
+                          <td>Yankee</td>
+                          <td>$15.00</td>
+                        </tr>
+                        <tr >
+                         <th scope="row" >3</th>
+                          <td> <a href="#" class="text-light">Balance Harmony</a></td>
+                          <td>Chesapeake Bay</td>
+                          <td>$11.00</td>
+                        </tr>
+                            <tr>
+                         <th scope="row">4</th>
+                          <td> <a href="#" class="text-light">Capri Blue</a></td>
+                          <td>Anthropologie</td>
+                          <td>$10.00</td>
+                        </tr>
+                            <tr>
+                         <th scope="row">5</th>
+                          <td> <a href="#" class="text-light">Mahogany Teakwood</a></td>
+                          <td>White Barn</td>
+                          <td>$22.00</td>
+                        </tr>
+                            <tr>
+                         <th scope="row">6</th>
+                          <td> <a href="#" class="text-light">Japonica Chawan</a></td>
+                          <td>Voluspa</td>
+                          <td>$30.00</td>
+                        </tr>
+                            <tr>
+                         <th scope="row">7</th>
+                          <td> <a href="#" class="text-light">Home Scents</a></td>
+                          <td>Chesapeake Bay</td>
+                          <td>$7.00</td>
+                        </tr>
+                            <tr>
+                         <th scope="row">8</th>
+                          <td> <a href="#" class="text-light">Grandma's Kitchen</a></td>
+                          <td>Homesick</td>
+                          <td>$32.00</td>
+                        </tr>
+                            <tr>
+                         <th scope="row">9</th>
+                          <td> <a href="#" class="text-light">Baies</a></td>
+                          <td>Paris 5</td>
+                          <td>$70.00</td>
+                        </tr>
+                            <tr>
+                         <th scope="row">10</th>
+                          <td> <a href="#" class="text-light">Hudson Grace</a></td>
+                          <td>Savannah</td>
+                          <td>$65.00</td>
+                        </tr>
+                                <tr>
+                         <th scope="row">11</th>
+                          <td> <a href="#" class="text-light">Fresh Linen</a></td>
+                          <td>Selina Julep</td>
+                          <td>$38.00</td>
+                        </tr>
+                                <tr>
+                         <th scope="row">12</th>
+                          <td> <a href="#" class="text-light">Uncommon Goods</a></td>
+                          <td>Uncorcked</td>
+                          <td>$24.00</td>
+                        </tr>
+                                <tr>
+                         <th scope="row">13</th>
+                          <td> <a href="#" class="text-light">Wine Scented</a></td>
+                          <td>Soy Wax</td>
+                          <td>$20.00</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+                <div class="accordion" id="ElectronicCandles">
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link" Style="color:black; font-weight: bold;"type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                          Electronic Candles
+                        </button>
+                      </h2>
+                    </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#ElectronicCandles">
+
+                    <table class="table table-striped table-dark">
+                      <thead>
+                        <tr>
+                          <th scope="col">Code</th>
+                          <th scope="col">Name</th>
+                          <th scope="col">Brand</th>
+                          <th scope="col">Price</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                         <th scope="row">1</th>
+                          <td> <a href="#" class="text-light">Flickering Candle</a></td>
+                          <td>Yeahbeer</td>
+                          <td>$55.00</td>
+                        </tr>
+                        <tr>
+                         <th scope="row">2</th>
+                          <td> <a href="#" class="text-light">One Glow</a></td>
+                          <td>Ontel</td>
+                          <td>$65.00</td>
+                        </tr>
+                        <tr >
+                         <th scope="row" >3</th>
+                          <td> <a href="#" class="text-light">Color Lamp</a></td>
+                          <td>LampLust Bay</td>
+                          <td>$75.00</td>
+                        </tr>
+                            <tr>
+                         <th scope="row">4</th>
+                          <td> <a href="#" class="text-light">Single Dingle</a></td>
+                          <td>Gideon</td>
+                          <td>$25.00</td>
+                        </tr>
+                            <tr>
+                         <th scope="row">5</th>
+                          <td> <a href="#" class="text-light">Grain Pillars</a></td>
+                          <td>Comenzar</td>
+                          <td>$80.00</td>
+                        </tr>
+                            <tr>
+                         <th scope="row">6</th>
+                          <td> <a href="#" class="text-light">White B</a></td>
+                          <td>Mars</td>
+                          <td>$30.00</td>
+                        </tr>
+                            <tr>
+                         <th scope="row">7</th>
+                          <td> <a href="#" class="text-light">Pillar Group</a></td>
+                          <td>Ry-King</td>
+                          <td>$74.00</td>
+                        </tr>
+                            <tr>
+                         <th scope="row">8</th>
+                          <td> <a href="#" class="text-light">Flameless</a></td>
+                          <td>Vivi</td>
+                          <td>$10.00</td>
+                        </tr>
+                            <tr>
+                         <th scope="row">9</th>
+                          <td> <a href="#" class="text-light">Ombre</a></td>
+                          <td>Impre</td>
+                          <td>$45.00</td>
+                        </tr>
+                            <tr>
+                         <th scope="row">10</th>
+                          <td> <a href="#" class="text-light">Inductive</a></td>
+                          <td>Hero</td>
+                          <td>$15.00</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Cards -->
+<div class="row" >
+        <div class="col-md-12 col-sm-12 col-12 justify-content-center">
+
+                <div class="card-body">
+                    <div Style="color:black; font-weight: bold;" class="card-header mb-1">
+                    Recommended
+                </div>
+            
+                <div class="row">
+               <div class="col-md-4 col-sm-6 col-6 col-lg-3 pb-3" style="text-align: center;">
+                        <a class="card" href="#" data-toggle="tooltip" data-placement="top" title="$60">
+                          <img class="card-img-top" src="img/candle-premium14.jpg" alt="Silicone Fob Watch">
+                          <div class="card-body text-center">
+                            <p class="card-text " >Mahogany Teakwood</p>
+                            </div> 
+                            </a>
+                                <button type="button" class="btn btn-sm btn-dark mt-1" data-toggle="popover" title="1x Candle" data-content="The item has been added to your shopping cart">
+                            <span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart
+                                </button>
+                          </div>             
+                <div class="col-md-4 col-sm-6 col-6 col-lg-3 pb-3" style="text-align: center;">
+                        <a class="card" href="#" data-toggle="tooltip" data-placement="top" title="$25">
+                          <img class="card-img-top" src="img/candle-premium18.jpg" alt="Silicone Fob Watch">
+                          <div class="card-body text-center">
+                            <p class="card-text">Capri Blue & Pink</p>
+                            </div> 
+                            </a>
+                                <button type="button" class="btn btn-sm btn-dark mt-1" data-toggle="popover" title="1x Candle" data-content="The item has been added to your shopping cart">
+                            <span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart
+                                </button>
+                          </div>
+              <div class="col-md-4 col-sm-6 col-6 col-lg-3 pb-3" style="text-align: center;">
+                        <a class="card" href="#" data-toggle="tooltip" data-placement="top" title="$15">
+                          <img class="card-img-top" src="img/candle-premium8.jpg" alt="Silicone Fob Watch">
+                          <div class="card-body text-center">
+                            <p class="card-text">Home Scents</p>
+                            </div> 
+                            </a>
+                                <button type="button" class="btn btn-sm btn-dark mt-1" data-toggle="popover" title="1x Candle" data-content="The item has been added to your shopping cart">
+                            <span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart
+                                </button>
+                          </div>  
+                    
+                    <div class="col-md-4 col-sm-6 col-6 col-lg-3 pb-3" style="text-align: center;">
+                        <a class="card" href="#" data-toggle="tooltip" data-placement="top" title="$20">
+                          <img class="card-img-top" src="img/candle-premium6.jpg" alt="Silicone Fob Watch">
+                          <div class="card-body text-center">
+                            <p class="card-text">Fresh Linen French Bee</p>
+                            </div> 
+                            </a>
+                                <button type="button" class="btn btn-sm btn-dark mt-1" data-toggle="popover" title="1x Candle" data-content="The item has been added to your shopping cart">
+                            <span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart
+                                </button>
+                          </div>                                       
+                    </div>
+              </div>
+        </div>
+    </div>
+
+            <!-- Footer -->
+            <div class="row" >
+                <div class="col-md-12" Style="margin-top:100px;">
+                    <footer class="footer text-light bg-dark" >
+                        <p class="text-ligh"><a href="#" class="text-secondary bg-dark">Copyright ©</a></p>
+                    </footer>
+                </div>
+            </div>
+        </div>	
+	</body>
+</html>
+
+<script type="text/javascript">
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    
+      $('[data-toggle="popover"]').popover({
+     trigger: 'focus'
+        })
+    });
+function myCart() {
+  alert("The item has been added to your shopping cart.");
+}
+
+</script>
